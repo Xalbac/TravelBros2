@@ -7,21 +7,21 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>50316812921-n1ksji3msqc2q3g3qanvimmh8m68gkdj.apps.googleusercontent.com</string>
+	<string>28494102651-1c1t9r6rcggqnucam7ri1tijsubs1oiv.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.50316812921-n1ksji3msqc2q3g3qanvimmh8m68gkdj</string>
+	<string>com.googleusercontent.apps.28494102651-1c1t9r6rcggqnucam7ri1tijsubs1oiv</string>
 	<key>API_KEY</key>
-	<string>AIzaSyC9Lx8GMCLfC1k96hK4PA4Gsf16rBFdJMs</string>
+	<string>AIzaSyAhYBbeCisXgMwAHgBMtKLhoXVzJZ7b5Sk</string>
 	<key>GCM_SENDER_ID</key>
-	<string>50316812921</string>
+	<string>28494102651</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>TravelBros</string>
 	<key>PROJECT_ID</key>
-	<string>travelbros-c0f5f</string>
+	<string>travelbros-789bf</string>
 	<key>STORAGE_BUCKET</key>
-	<string>travelbros-c0f5f.appspot.com</string>
+	<string>travelbros-789bf.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true></true>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -33,8 +33,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:50316812921:ios:3b2d13cd20e01290</string>
+	<string>1:28494102651:ios:3b2d13cd20e01290</string>
 	<key>DATABASE_URL</key>
-	<string>https://travelbros-c0f5f.firebaseio.com</string>
+	<string>https://travelbros-789bf.firebaseio.com</string>
 </dict>
 </plist>

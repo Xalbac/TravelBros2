@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		42ACD8F1215A668400BFF560 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 42ACD8F0215A668400BFF560 /* GoogleService-Info.plist */; };
+		42DE5FF3215A6A0C008214D5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 42DE5FF2215A6A0C008214D5 /* GoogleService-Info.plist */; };
 		D0BCE47421525913000BCF86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BCE47321525913000BCF86 /* AppDelegate.swift */; };
 		D0BCE47621525913000BCF86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BCE47521525913000BCF86 /* ViewController.swift */; };
 		D0BCE47921525913000BCF86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0BCE47721525913000BCF86 /* Main.storyboard */; };
@@ -35,7 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		42ACD8F0215A668400BFF560 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		42DE5FF2215A6A0C008214D5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		D0BCE47021525913000BCF86 /* TravelBros2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelBros2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0BCE47321525913000BCF86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0BCE47521525913000BCF86 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -105,7 +105,7 @@
 				D0BCE47A21525914000BCF86 /* Assets.xcassets */,
 				D0BCE47C21525914000BCF86 /* LaunchScreen.storyboard */,
 				D0BCE47F21525914000BCF86 /* Info.plist */,
-				42ACD8F0215A668400BFF560 /* GoogleService-Info.plist */,
+				42DE5FF2215A6A0C008214D5 /* GoogleService-Info.plist */,
 			);
 			path = TravelBros2;
 			sourceTree = "<group>";
@@ -233,7 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0BCE47E21525914000BCF86 /* LaunchScreen.storyboard in Resources */,
-				42ACD8F1215A668400BFF560 /* GoogleService-Info.plist in Resources */,
+				42DE5FF3215A6A0C008214D5 /* GoogleService-Info.plist in Resources */,
 				D0BCE47B21525914000BCF86 /* Assets.xcassets in Resources */,
 				D0BCE47921525913000BCF86 /* Main.storyboard in Resources */,
 			);
