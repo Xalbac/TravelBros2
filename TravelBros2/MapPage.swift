@@ -14,4 +14,12 @@ class MapPage: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
     
     var address = ""
     var entryDate = ""
+    
+    @IBOutlet weak var restMapView: MKMapView!
+    
+    let locationManager = CLLocationManager()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
 }

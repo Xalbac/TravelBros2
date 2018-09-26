@@ -49,10 +49,10 @@ class NewEntry: UITableViewController, UITextFieldDelegate, UIImagePickerControl
         self.present(imagePicker, animated: true, completion: nil)
     }
     
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        
-        
-    }
+//    private func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+//        entryImage.image = info[UIImagePickerControllerOriginalImage] as? UIImage
+//        dismiss(animated:true, completion: nil)
+//    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
