@@ -18,6 +18,7 @@
 		D0BCE47E21525914000BCF86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0BCE47C21525914000BCF86 /* LaunchScreen.storyboard */; };
 		D0BCE48921525914000BCF86 /* TravelBros2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BCE48821525914000BCF86 /* TravelBros2Tests.swift */; };
 		D0BCE49421525914000BCF86 /* TravelBros2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BCE49321525914000BCF86 /* TravelBros2UITests.swift */; };
+		D0FC7D25215B932800DE2D18 /* TravelBrosListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FC7D24215B932800DE2D18 /* TravelBrosListView.swift */; };
 		FFB4F3A1012FD6C007B81B37 /* Pods_TravelBros2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3594AF068AD811FFCA6351E1 /* Pods_TravelBros2.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +63,7 @@
 		D0BCE48F21525914000BCF86 /* TravelBros2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelBros2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0BCE49321525914000BCF86 /* TravelBros2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelBros2UITests.swift; sourceTree = "<group>"; };
 		D0BCE49521525914000BCF86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0FC7D24215B932800DE2D18 /* TravelBrosListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelBrosListView.swift; sourceTree = "<group>"; };
 		DB537AB828D6915AAF3CC2B5 /* Pods_TravelBros2UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelBros2UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -122,6 +124,7 @@
 				D0BCE47521525913000BCF86 /* ViewController.swift */,
 				4232B8DE215ADCCA00496F2F /* TravelBrosDB.swift */,
 				D0BCE47721525913000BCF86 /* Main.storyboard */,
+				D0FC7D24215B932800DE2D18 /* TravelBrosListView.swift */,
 				D0BCE47A21525914000BCF86 /* Assets.xcassets */,
 				D0BCE47C21525914000BCF86 /* LaunchScreen.storyboard */,
 				D0BCE47F21525914000BCF86 /* Info.plist */,
@@ -444,6 +447,7 @@
 			files = (
 				4232B8DF215ADCCA00496F2F /* TravelBrosDB.swift in Sources */,
 				D0BCE47621525913000BCF86 /* ViewController.swift in Sources */,
+				D0FC7D25215B932800DE2D18 /* TravelBrosListView.swift in Sources */,
 				D0BCE47421525913000BCF86 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
