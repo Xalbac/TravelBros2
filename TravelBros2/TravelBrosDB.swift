@@ -31,6 +31,7 @@ class TravelBrosDB {
     struct DiaryEntry {
         var id = ""
         var date = ""
+        var address = ""
         var imgUrl = ""
         var img:UIImage?
         var entry = ""

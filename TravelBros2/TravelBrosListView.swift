@@ -19,7 +19,7 @@ class TravelBrosList: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         diaryData.loadDB()
         loadActivity.isHidden = true
-        //        restData.dataDel = self  // Firebase
+               diaryData.dataDel = self  // Firebase
     }
     
    override func viewWillAppear(_ animated: Bool) {
