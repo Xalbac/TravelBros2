@@ -13,6 +13,9 @@ import SafariServices
 class TravelBrosEntryPage: UIViewController, DiaryDelegate, MFMailComposeViewControllerDelegate {
     
     
+    var entryID = ""
+    
+    
     func setDiaryData() {
         <#code#>
     }

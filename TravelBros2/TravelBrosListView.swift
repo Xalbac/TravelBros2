@@ -40,27 +40,27 @@ class TravelBrosList: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "DiaryCell", for: indexPath) as! DiaryCell
         let row = indexPath.row
-        let restCell = diaryData.diaryArray[row]
-        cell.entryLabel.text = restCell.date
+        let diaryCell = diaryData.diaryArray[row]
+        cell.entryLabel.text = diaryCell.date
 //        cell.entryImage.image = restCell.thumb
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let row = indexPath.row
-        performSegue(withIdentifier: "showRestPage", sender: row)
+        performSegue(withIdentifier: "showEntryPage", sender: row)
     }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "showRestPage" {
-//            if let restPage = segue.destination as? RestaurantPage {
-//                if let indx = sender as? Int {
-//                    let newRest = restData.restaurantArray[indx]
-//                    restPage.restaurantID = newRest.id
-//                }
-//            }
-//        }
-//    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showEntryPage" {
+            if let diaryPage = segue.destination as? TravelBrosEntryPage {
+                if let indx = sender as? Int {
+                    let newEntry = diaryData.diaryArray[indx]
+                    diaryPage.entryID = newEntry.id
+                }
+            }
+        }
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
