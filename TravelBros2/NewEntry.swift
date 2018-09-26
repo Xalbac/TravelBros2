@@ -19,5 +19,43 @@ class NewEntry: UITableViewController, UITextFieldDelegate, UIImagePickerControl
     
     let diaryData = TravelBrosDB()
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
     
+    @IBAction func sparaData() {
+        
+        diaryData.singleEntry.date = dateField.text ?? ""
+        diaryData.singleEntry.address = addressField.text ?? ""
+        diaryData.singleEntry.entry = entryField.text ?? ""
+        
+        if entryImage.image != nil {
+            diaryData.singleEntry.img = entryImage.image
+        }
+        
+        diaryData.uploadData()
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    @IBAction func newPicture(_ sender: UIButton) {
+        let imagePicker = UIImagePickerController()
+        imagePicker.delegate = self
+        if sender.tag == 1 { imagePicker.sourceType = .camera }
+        else if sender.tag == 2 { imagePicker.sourceType = .photoLibrary }
+        self.present(imagePicker, animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        
+        
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
 }
