@@ -24,18 +24,28 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RjA-Wa-g5L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-49" y="27"/>
         </scene>
-        <!--Title-->
+        <!--New Entry-->
         <scene sceneID="zw6-OP-8r6">
             <objects>
                 <viewController id="rPy-fR-AlG" customClass="TravelBroListNewItem" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ZWi-el-xuX" customClass="TravelBroListNewItemView">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Vou-LS-QSW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="6p2-Qv-d6u"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Title" id="gqZ-kN-Pvm"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="mQ8-YV-T12">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mQ8-YV-T12" id="iSg-yu-hbW">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="New Entry" id="K9M-KV-u6S" customClass="TravelBroListNewEntryNav"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rFL-Oz-fF3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -88,7 +98,7 @@
                     <navigationItem key="navigationItem" id="Fz6-CC-NL0" customClass="TravelBroReseListaNav">
                         <barButtonItem key="rightBarButtonItem" title="Item" id="XIE-ZU-H3U" customClass="TravelBroReseListaNavNew">
                             <connections>
-                                <segue destination="rPy-fR-AlG" kind="show" id="p6D-ZW-GRS"/>
+                                <segue destination="rPy-fR-AlG" kind="show" id="VyD-1E-bRz"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
