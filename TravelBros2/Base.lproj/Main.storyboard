@@ -51,6 +51,21 @@
             </objects>
             <point key="canvasLocation" x="1649" y="-647"/>
         </scene>
+        <!--Travel Bro List Item Map-->
+        <scene sceneID="TMQ-mc-F73">
+            <objects>
+                <viewController id="SLD-ZA-aUq" customClass="TravelBroListItemMap" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1cn-dg-SEK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="yAu-DU-dNY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dUj-rn-zZS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2579" y="-706"/>
+        </scene>
         <!--Travel Bro Rese List-->
         <scene sceneID="cG9-w8-OBz">
             <objects>
@@ -115,9 +130,20 @@
                     <view key="view" contentMode="scaleToFill" id="kBi-3c-Zjf" customClass="TravelBroListItemDetaljerView">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KNz-qm-gpz">
+                                <rect key="frame" x="164" y="318" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="SLD-ZA-aUq" kind="show" id="keV-CZ-tzi"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="1Af-I3-0k2"/>
                     </view>
+                    <navigationItem key="navigationItem" id="t5q-U4-ThG" customClass="TravelBroListItemDetailNav"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="83i-09-Yd9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
