@@ -65,6 +65,24 @@ class TravelBrosDB {
         
     }
     
+//    func loadThumbs() {
+//        let storageRef = Storage.storage().reference()
+//        for (index,var newRest) in restaurantArray.enumerated() {
+//            let imgRef = storageRef.child(newRest.thumbUrl )
+//            imgRef.getData(maxSize: 1024*1024) { data, error in
+//                if let error = error {
+//                    print(error)
+//                } else {
+//                    if let thumbData = data {
+//                        newRest.thumb = UIImage(data: thumbData)
+//                        self.restaurantArray[index] = newRest
+//                    }
+//                }
+//                self.dataDel?.laddaTabell()
+//            }
+//        }
+//    }
+    
     func loadSingleEntry(entryId:String) {
         let db = Firestore.firestore()
         let docRef = db.collection("Entries").document(entryId)
@@ -176,5 +194,36 @@ class TravelBrosDB {
         }
         
     }
+    
+//    func uploadThumb(imgName:String) {
+//        if let image = oneRestaurant.img {
+//            UIGraphicsBeginImageContext(CGSize(width: 80, height: 80))
+//            let ratio = Double(image.size.width/image.size.height)
+//            let scaleWidth = ratio*80.0
+//            let scaleHeight = 80.0
+//            let offsetX = (scaleWidth-80)/2.0
+//            let offsetY = 0.0
+//            image.draw(in: CGRect(x: -offsetX, y: -offsetY, width: scaleWidth, height: scaleHeight))
+//
+//            let thumb = UIGraphicsGetImageFromCurrentImageContext()
+//            UIGraphicsEndImageContext()
+//
+//            if let thumb = thumb, let jpegData = UIImageJPEGRepresentation(thumb, 0.7) {
+//                let storageRef = Storage.storage().reference()
+//                let imgRef = storageRef.child(imgName+"_thumb.jpg")
+//
+//                let metadata = StorageMetadata()
+//                metadata.contentType = "image/jpeg"
+//
+//                imgRef.putData(jpegData, metadata: metadata) { (metadata, error) in
+//                    guard metadata != nil else {
+//                        print(error!)
+//                        return
+//                    }
+//                    print("thumb uploaded")
+//                }
+//            }
+//        }
+//    }
     
 }
