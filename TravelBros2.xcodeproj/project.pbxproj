@@ -17,8 +17,6 @@
 		D0BCE47921525913000BCF86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0BCE47721525913000BCF86 /* Main.storyboard */; };
 		D0BCE47B21525914000BCF86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0BCE47A21525914000BCF86 /* Assets.xcassets */; };
 		D0BCE47E21525914000BCF86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0BCE47C21525914000BCF86 /* LaunchScreen.storyboard */; };
-		D0BCE48921525914000BCF86 /* TravelBros2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BCE48821525914000BCF86 /* TravelBros2Tests.swift */; };
-		D0BCE49421525914000BCF86 /* TravelBros2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BCE49321525914000BCF86 /* TravelBros2UITests.swift */; };
 		D0FC7D25215B932800DE2D18 /* TravelBrosListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FC7D24215B932800DE2D18 /* TravelBrosListView.swift */; };
 		FFB4F3A1012FD6C007B81B37 /* Pods_TravelBros2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3594AF068AD811FFCA6351E1 /* Pods_TravelBros2.framework */; };
 /* End PBXBuildFile section */
@@ -60,11 +58,7 @@
 		D0BCE47D21525914000BCF86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D0BCE47F21525914000BCF86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0BCE48421525914000BCF86 /* TravelBros2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelBros2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D0BCE48821525914000BCF86 /* TravelBros2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelBros2Tests.swift; sourceTree = "<group>"; };
-		D0BCE48A21525914000BCF86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0BCE48F21525914000BCF86 /* TravelBros2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelBros2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D0BCE49321525914000BCF86 /* TravelBros2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelBros2UITests.swift; sourceTree = "<group>"; };
-		D0BCE49521525914000BCF86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0FC7D24215B932800DE2D18 /* TravelBrosListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelBrosListView.swift; sourceTree = "<group>"; };
 		DB537AB828D6915AAF3CC2B5 /* Pods_TravelBros2UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelBros2UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -101,8 +95,6 @@
 			isa = PBXGroup;
 			children = (
 				D0BCE47221525913000BCF86 /* TravelBros2 */,
-				D0BCE48721525914000BCF86 /* TravelBros2Tests */,
-				D0BCE49221525914000BCF86 /* TravelBros2UITests */,
 				D0BCE47121525913000BCF86 /* Products */,
 				E39BFF7F3361750597389861 /* Pods */,
 				FE76EAF0DBDE1348D78A41EA /* Frameworks */,
@@ -134,24 +126,6 @@
 				42DE5FF2215A6A0C008214D5 /* GoogleService-Info.plist */,
 			);
 			path = TravelBros2;
-			sourceTree = "<group>";
-		};
-		D0BCE48721525914000BCF86 /* TravelBros2Tests */ = {
-			isa = PBXGroup;
-			children = (
-				D0BCE48821525914000BCF86 /* TravelBros2Tests.swift */,
-				D0BCE48A21525914000BCF86 /* Info.plist */,
-			);
-			path = TravelBros2Tests;
-			sourceTree = "<group>";
-		};
-		D0BCE49221525914000BCF86 /* TravelBros2UITests */ = {
-			isa = PBXGroup;
-			children = (
-				D0BCE49321525914000BCF86 /* TravelBros2UITests.swift */,
-				D0BCE49521525914000BCF86 /* Info.plist */,
-			);
-			path = TravelBros2UITests;
 			sourceTree = "<group>";
 		};
 		E39BFF7F3361750597389861 /* Pods */ = {
@@ -460,7 +434,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0BCE48921525914000BCF86 /* TravelBros2Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,7 +441,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0BCE49421525914000BCF86 /* TravelBros2UITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
