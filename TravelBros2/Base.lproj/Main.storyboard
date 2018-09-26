@@ -111,7 +111,6 @@
         <!--Travel Bro List Item Detaljer-->
         <scene sceneID="vtj-qE-0gi">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="83i-09-Yd9" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="98g-V7-eS1" customClass="TravelBroListItemDetaljer" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kBi-3c-Zjf" customClass="TravelBroListItemDetaljerView">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -120,6 +119,7 @@
                         <viewLayoutGuide key="safeArea" id="1Af-I3-0k2"/>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="83i-09-Yd9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1650" y="27"/>
         </scene>
