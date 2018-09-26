@@ -6,4 +6,16 @@
 //  Copyright © 2018 Bros. All rights reserved.
 //
 
-import Foundation
+import UIKit
+import MessageUI
+import SafariServices
+
+class TravelBrosEntryPage: UIViewController, DiaryDelegate, MFMailComposeViewControllerDelegate {
+    
+    
+    func setDiaryData() {
+        <#code#>
+    }
+    
+    
+}
