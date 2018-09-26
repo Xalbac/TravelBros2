@@ -33,12 +33,13 @@
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "416x416.jpg",
+      "filename" : "padubidiri-beach-shore 3.jpg",
       "scale" : "2x"
     },
     {
-      "idiom" : "iphone",
       "size" : "60x60",
+      "idiom" : "iphone",
+      "filename" : "padubidiri-beach-shore.jpg",
       "scale" : "3x"
     },
     {
