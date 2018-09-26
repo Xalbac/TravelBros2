@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4232B8DF215ADCCA00496F2F /* TravelBrosDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4232B8DE215ADCCA00496F2F /* TravelBrosDB.swift */; };
+		42845713215BA19D00C07026 /* DiaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42845712215BA19D00C07026 /* DiaryCell.swift */; };
 		42B3E49F215B9A5000D5B962 /* TravelBrosEntryPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B3E49E215B9A5000D5B962 /* TravelBrosEntryPage.swift */; };
 		42DE5FF3215A6A0C008214D5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 42DE5FF2215A6A0C008214D5 /* GoogleService-Info.plist */; };
 		6B7B4E3DD783D6D6557EBF3E /* Pods_TravelBros2Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7375F9BEEC50FDEE1D6C31B4 /* Pods_TravelBros2Tests.framework */; };
@@ -42,6 +43,7 @@
 		0B2D131762A11C01F2624577 /* Pods-TravelBros2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelBros2.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravelBros2/Pods-TravelBros2.release.xcconfig"; sourceTree = "<group>"; };
 		3594AF068AD811FFCA6351E1 /* Pods_TravelBros2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelBros2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4232B8DE215ADCCA00496F2F /* TravelBrosDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelBrosDB.swift; sourceTree = "<group>"; };
+		42845712215BA19D00C07026 /* DiaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryCell.swift; sourceTree = "<group>"; };
 		42B3E49E215B9A5000D5B962 /* TravelBrosEntryPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelBrosEntryPage.swift; sourceTree = "<group>"; };
 		42DE5FF2215A6A0C008214D5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		5DFB7C2F35AEB69290C939CE /* Pods-TravelBros2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelBros2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravelBros2/Pods-TravelBros2.debug.xcconfig"; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				4232B8DE215ADCCA00496F2F /* TravelBrosDB.swift */,
 				D0BCE47721525913000BCF86 /* Main.storyboard */,
 				D0FC7D24215B932800DE2D18 /* TravelBrosListView.swift */,
+				42845712215BA19D00C07026 /* DiaryCell.swift */,
 				D0BCE47A21525914000BCF86 /* Assets.xcassets */,
 				D0BCE47C21525914000BCF86 /* LaunchScreen.storyboard */,
 				D0BCE47F21525914000BCF86 /* Info.plist */,
@@ -425,6 +428,7 @@
 				42B3E49F215B9A5000D5B962 /* TravelBrosEntryPage.swift in Sources */,
 				4232B8DF215ADCCA00496F2F /* TravelBrosDB.swift in Sources */,
 				D0BCE47621525913000BCF86 /* ViewController.swift in Sources */,
+				42845713215BA19D00C07026 /* DiaryCell.swift in Sources */,
 				D0FC7D25215B932800DE2D18 /* TravelBrosListView.swift in Sources */,
 				D0BCE47421525913000BCF86 /* AppDelegate.swift in Sources */,
 			);
