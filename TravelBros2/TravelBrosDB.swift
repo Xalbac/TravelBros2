@@ -26,9 +26,9 @@ protocol DiaryDelegate {
 class TravelBrosDB {
     
     var dataDel: DataDelegate?
-    var restDel: DiaryDelegate?
+    var diaryDel: DiaryDelegate?
     
-    struct DiaryEntry {
+    struct Entry {
         var id = ""
         var date = ""
         var address = ""
@@ -38,8 +38,8 @@ class TravelBrosDB {
         var rating = ""
     }
     
-    var diaryArray:[DiaryEntry] = []
-    var singleEntry = DiaryEntry()
+    var diaryArray:[Entry] = []
+    var singleEntry = Entry()
 
     init() {
     }
@@ -52,7 +52,7 @@ class TravelBrosDB {
             } else {
                 guard let qSnapshot = querySnapshot else {return}
                 for document in qSnapshot.documents {
-                    var newEntry = DiaryEntry()
+                    var newEntry = Entry()
                     newEntry.id = document.documentID
                     newEntry.date = document.data()["date"] as? String ?? ""
                     self.diaryArray.append(newEntry)
@@ -102,7 +102,7 @@ class TravelBrosDB {
                 if let imgData = data {
                     if let diaryImg = UIImage(data: imgData){
                         self.singleEntry.img = diaryImg
-//                        self.restDel?.setRestData()
+                        self.diaryDel?.setDiaryData()
                     }
                 }
                 
@@ -135,7 +135,7 @@ class TravelBrosDB {
                 print("Error: \(err)")
             } else {
                 print("Dokument sparat")
-//                if self.singleEntry.img != nil { self.uploadImage(imgName: imgName) }
+              if self.singleEntry.img != nil { self.uploadImage(imgName: imgName) }
             }
         }
     }
@@ -167,7 +167,6 @@ class TravelBrosDB {
                         return
                     }
                     print("image uploaded")
-//                    self.uploadThumb(imgName: imgName)
                 }
             }
             

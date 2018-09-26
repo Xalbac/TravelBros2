@@ -23,7 +23,7 @@ class TravelBrosEntryPage: UIViewController, DiaryDelegate, MFMailComposeViewCon
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        diaryData.restDel = self   // Firebase
+        diaryData.diaryDel = self   // Firebase
         setDiaryData()
     }
     

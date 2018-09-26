@@ -49,13 +49,18 @@ class NewEntry: UITableViewController, UITextFieldDelegate, UIImagePickerControl
         self.present(imagePicker, animated: true, completion: nil)
     }
     
-//    private func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-//        entryImage.image = info[UIImagePickerControllerOriginalImage] as? UIImage
-//        dismiss(animated:true, completion: nil)
-//    }
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        entryImage.image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage
+        dismiss(animated: true, completion: nil)
+    }
+
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 }
+//    private func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+//        entryImage.image = info[UIImagePickerControllerOriginalImage] as? UIImage
+//        dismiss(animated:true, completion: nil)
+//    }
