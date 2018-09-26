@@ -75,10 +75,17 @@
             </objects>
             <point key="canvasLocation" x="1197.5999999999999" y="766.86656671664173"/>
         </scene>
-        <!--View Controller-->
+        <!--Travel Bro Rese Detaljer-->
         <scene sceneID="vtj-qE-0gi">
             <objects>
-                <viewController id="98g-V7-eS1" sceneMemberID="viewController"/>
+                <viewController id="98g-V7-eS1" customClass="TravelBroReseDetaljer" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zPi-r4-LMl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="CkH-3a-qZl"/>
+                    </view>
+                </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="83i-09-Yd9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
