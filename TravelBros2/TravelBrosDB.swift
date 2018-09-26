@@ -28,8 +28,8 @@ class TravelBrosDB {
         var rating = ""
     }
     
-    var DiaryArray:[DiaryEntry] = []
-    var SingleEntry = DiaryEntry()
+    var diaryArray:[DiaryEntry] = []
+    var singleEntry = DiaryEntry()
 
     init() {
     }
@@ -46,7 +46,7 @@ class TravelBrosDB {
                     newEntry.id = document.documentID
                     newEntry.date = document.data()["date"] as? String ?? ""
 //                    newRest.thumbUrl = document.data()["thumb"] as? String ?? ""
-                    self.DiaryArray.append(newEntry)
+                    self.diaryArray.append(newEntry)
                 }
                 
 //                self.dataDel?.laddaTabell()
@@ -67,7 +67,7 @@ class TravelBrosDB {
             if let document = document, document.exists {
                 if let dataDescription = document.data() {
                     
-                    self.SingleEntry.date = dataDescription["date"] as? String ?? ""
+                    self.singleEntry.date = dataDescription["date"] as? String ?? ""
 //                    self.oneRestaurant.adress = dataDescription["address"] as? String ?? ""
 //                    self.oneRestaurant.imgUrl = dataDescription["img"] as? String ?? ""
 //                    self.oneRestaurant.url = dataDescription["url"] as? String ?? ""
@@ -84,13 +84,90 @@ class TravelBrosDB {
     }
     
 //    loadimage
+    func loadImage(imgUrl:String) {
+        let storageRef = Storage.storage().reference()
+        let imgRef = storageRef.child(imgUrl)
+        imgRef.getData(maxSize: 1024*1024) { data, error in
+            if let error = error {
+                print(error)
+            } else {
+                if let imgData = data {
+                    if let diaryImg = UIImage(data: imgData){
+                        self.singleEntry.img = diaryImg
+//                        self.restDel?.setRestData()
+                    }
+                }
+                
+            }
+            
+            
+        }
+    }
+    
     
     
 //    uploadData
+    func uploadData() {
+        var imgName = singleEntry.date.replacingOccurrences(of: " ", with: "_")
+        imgName = imgName.replacingOccurrences(of: "&", with: "")
+        imgName = imgName.lowercased()
+        
+        let db = Firestore.firestore()
+        var dataDict = [
+            "date": singleEntry.date,
+            "entry": singleEntry.entry
+        ]
+        
+        if singleEntry.img != nil {
+            dataDict["img"] = imgName + ".jpg"
+//            dataDict["thumb"] = imgName + "_thumb.jpg"
+        }
+        
+        db.collection("Entries").document().setData(dataDict) { err in
+            if let err = err {
+                print("Error: \(err)")
+            } else {
+                print("Dokument sparat")
+//                if self.singleEntry.img != nil { self.uploadImage(imgName: imgName) }
+            }
+        }
+    }
     
     
 //    uploadImage
-    
+    func uploadImage(imgName:String) {
+        if let image = singleEntry.img {
+            UIGraphicsBeginImageContext(CGSize(width: 800, height: 475))
+            let ratio = Double(image.size.width/image.size.height)
+            let scaleWidth = 880.0
+            let scaleHeight = 880.0/ratio
+            let offsetX = 0.0
+            let offsetY = (scaleHeight-475)/2.0
+            image.draw(in: CGRect(x: -offsetX, y: -offsetY, width: scaleWidth, height: scaleHeight))
+            let largeImg = UIGraphicsGetImageFromCurrentImageContext()
+            UIGraphicsEndImageContext()
+            
+            if let largeImg = largeImg, let jpegData = largeImg.jpegData(compressionQuality: 0.7) {
+                let storageRef = Storage.storage().reference()
+                let imgRef = storageRef.child(imgName+".jpg")
+                
+                let metadata = StorageMetadata()
+                metadata.contentType = "image/jpeg"
+                
+                imgRef.putData(jpegData, metadata: metadata) { (metadata, error) in
+                    guard metadata != nil else {
+                        print(error!)
+                        return
+                    }
+                    print("image uploaded")
+//                    self.uploadThumb(imgName: imgName)
+                }
+            }
+            
+            
+        }
+        
+    }
     
     
     
