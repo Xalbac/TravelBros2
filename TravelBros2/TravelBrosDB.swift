@@ -10,14 +10,23 @@ import UIKit
 import Firebase
 
 //protocol data delegate func laddatabell
+protocol DataDelegate {
+    func laddaTabell()
+}
 
 //protocol restaurantDelegate
 //func set restdata
 
+protocol DiaryDelegate {
+    func setDiaryData()
+    //    func setRestData(description:[String:Any])
+    //    func setRestImg(img:UIImage)
+}
+
 class TravelBrosDB {
     
-//    var dataDel: DataDelegate?
-//    var restDel: RestaurantDelegate?
+    var dataDel: DataDelegate?
+    var restDel: DiaryDelegate?
     
     struct DiaryEntry {
         var id = ""
@@ -105,7 +114,6 @@ class TravelBrosDB {
     }
     
     
-    
 //    uploadData
     func uploadData() {
         var imgName = singleEntry.date.replacingOccurrences(of: " ", with: "_")
@@ -168,7 +176,5 @@ class TravelBrosDB {
         }
         
     }
-    
-    
     
 }
