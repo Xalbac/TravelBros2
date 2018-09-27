@@ -165,8 +165,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="4PB-YV-zVg">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="0.0" y="57" width="375" height="610"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -185,9 +185,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" estimatedRowHeight="-1" sectionHeaderHeight="30" sectionFooterHeight="30" translatesAutoresizingMaskIntoConstraints="NO" id="XzW-kS-p89">
-                                <rect key="frame" x="0.0" y="64" width="375" height="559"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" estimatedRowHeight="-1" sectionHeaderHeight="30" sectionFooterHeight="30" translatesAutoresizingMaskIntoConstraints="NO" id="XzW-kS-p89">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="51" id="hQb-Ke-kCM" customClass="EntryCell" customModule="TravelBros2" customModuleProvider="target">
@@ -196,15 +195,6 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hQb-Ke-kCM" id="TWU-6b-rKV">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="50.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ar-jC-Tcl">
-                                                    <rect key="frame" x="165.64002932550522" y="15.4450146629556" width="42" height="21.000000000000114"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
                                         </tableViewCellContentView>
                                         <connections>
                                             <segue destination="98g-V7-eS1" kind="show" identifier="TravelBroItemShowDetails" id="GC9-n7-9Hg"/>
@@ -212,23 +202,21 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="hKl-ft-PEd">
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="hKl-ft-PEd">
                                 <rect key="frame" x="177" y="323" width="20" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </activityIndicatorView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jmc-0S-4r8">
-                                <rect key="frame" x="0.0" y="624" width="375" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="ADD NEW DATE">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="rPy-fR-AlG" kind="show" id="icw-f7-AMv"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="XzW-kS-p89" firstAttribute="top" secondItem="74E-ua-JRu" secondAttribute="top" id="XuE-Lo-I1t"/>
+                            <constraint firstItem="hKl-ft-PEd" firstAttribute="leading" secondItem="74E-ua-JRu" secondAttribute="leading" constant="177" id="dBv-kk-yY6"/>
+                            <constraint firstItem="74E-ua-JRu" firstAttribute="trailing" secondItem="hKl-ft-PEd" secondAttribute="trailing" constant="178" id="f6V-Nn-ykb"/>
+                            <constraint firstItem="XzW-kS-p89" firstAttribute="leading" secondItem="Wxu-cC-0GZ" secondAttribute="leading" id="o0i-Ig-HuK"/>
+                            <constraint firstItem="XzW-kS-p89" firstAttribute="bottom" secondItem="74E-ua-JRu" secondAttribute="bottom" id="rKI-VD-5UV"/>
+                            <constraint firstItem="74E-ua-JRu" firstAttribute="bottom" secondItem="hKl-ft-PEd" secondAttribute="bottom" constant="324" id="rQr-cP-CqD"/>
+                            <constraint firstAttribute="trailing" secondItem="XzW-kS-p89" secondAttribute="trailing" id="rrM-wg-sCo"/>
+                            <constraint firstItem="hKl-ft-PEd" firstAttribute="top" secondItem="74E-ua-JRu" secondAttribute="top" constant="259" id="u8c-it-jZ0"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="74E-ua-JRu"/>
                     </view>
                     <toolbarItems/>
@@ -243,7 +231,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qiv-GZ-G3X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="885.60000000000002" y="26.53673163418291"/>
+            <point key="canvasLocation" x="884.70764617691157" y="26.399999999999999"/>
         </scene>
         <!--Travel Bro List Item Detaljer-->
         <scene sceneID="vtj-qE-0gi">
@@ -293,7 +281,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="t5q-U4-ThG" customClass="TravelBroListItemDetailNav">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="DMj-LB-y1s">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="KNz-qm-gpz">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="KNz-qm-gpz">
                                 <rect key="frame" x="310" y="5" width="49" height="34"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -310,8 +298,5 @@
             <point key="canvasLocation" x="1648.8" y="26.53673163418291"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="icw-f7-AMv"/>
-    </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>
