@@ -30,18 +30,16 @@
             </objects>
             <point key="canvasLocation" x="132" y="27"/>
         </scene>
-        <!--New Entry-->
-        <scene sceneID="zw6-OP-8r6">
+        <!--Table View Controller-->
+        <scene sceneID="sYR-ZQ-n6e">
             <objects>
-                <viewController id="rPy-fR-AlG" customClass="TravelBroListNewItem" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Vou-LS-QSW">
+                <tableViewController id="9vs-p1-0fu" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="0gN-Fs-Y9m">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="9mK-D8-vIo"/>
-                        <color key="separatorColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <sections>
-                            <tableViewSection id="iPq-FM-TfV">
+                            <tableViewSection id="wMC-RL-NIE">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="200" id="mQ8-YV-T12">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
@@ -176,12 +174,15 @@
                                 </cells>
                             </tableViewSection>
                         </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="9vs-p1-0fu" id="SA8-3d-acF"/>
+                            <outlet property="delegate" destination="9vs-p1-0fu" id="xc0-fY-OkN"/>
+                        </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="New Entry" id="K9M-KV-u6S" customClass="TravelBroListNewEntryNav"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rFL-Oz-fF3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ykO-GL-p9h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="884.70764617691157" y="-639.20000000000005"/>
+            <point key="canvasLocation" x="1650" y="-639"/>
         </scene>
         <!--Travel Bro List Item Map-->
         <scene sceneID="TMQ-mc-F73">
@@ -250,7 +251,7 @@
                     <navigationItem key="navigationItem" id="Fz6-CC-NL0">
                         <barButtonItem key="rightBarButtonItem" title="Item" id="XIE-ZU-H3U">
                             <connections>
-                                <segue destination="rPy-fR-AlG" kind="show" id="VyD-1E-bRz"/>
+                                <segue destination="9vs-p1-0fu" kind="show" id="uyn-45-Y0L"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
